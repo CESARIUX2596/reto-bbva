@@ -7,8 +7,8 @@ const config = {
     bucketName: 'textract-console-us-west-2-51755281-cab5-4f5e-9891-0dad1c49f1b6',
     dirName: 'pdf',
     region: 'us-west-2',
-    accessKeyId: 'AKIA2RK7O5A44SQKPKUE',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
 }
 
 class Content extends Component {
