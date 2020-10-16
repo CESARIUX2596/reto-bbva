@@ -2,14 +2,13 @@ import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import "./css/content.css";
 import ReactS3 from 'react-s3';
-import {aws} from '../../keys';
 
 const config = {
     bucketName: 'textract-console-us-west-2-51755281-cab5-4f5e-9891-0dad1c49f1b6',
     dirName: 'pdf',
     region: 'us-west-2',
-    accessKeyId: aws.accessKeyId,
-    secretAccessKey: aws.secretAccessKey,
+    accessKeyId: 'AKIA2RK7O5A44SQKPKUE',
+    secretAccessKey: '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',
 }
 
 class Content extends Component {
