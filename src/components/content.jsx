@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./css/content.css";
 import * as styles from "./css/FileUpload.module.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Content extends Component {
     state = {
@@ -9,6 +10,7 @@ class Content extends Component {
         uploadSuccess: undefined,
         error: undefined
     };
+    
     
     uploadFile() {
         // Getting the signed url
@@ -41,48 +43,58 @@ class Content extends Component {
     }
 
     render() {
-        
-        return (
-            <div className={styles.fileUploadCont}>
-              
-                <div>
-                    <h1>Cargar archivo</h1>
-                    <form>
-                        <div className="form-group">
-                            <input
-                                type="file"
-                                className="form-control-file"
-                                id="fileUpload"
-                                onChange={e => {
-                                    this.setState({
-                                        fileToUpload: e.target.files[0]
-                                    });
-                                }}
-                            />
-                            {this.state.fileToUpload ? (
-                                <button
-                                    type="button"
-                                    className="btn btn-light"
-                                    onClick={e => {
-                                        this.uploadFile();
-                                    }}
-                                >
-                                    Upload your file
-                                </button>
-                            ) : null}
+       
+        return(
+                    <div className={styles.fileUploadCont}>
+                        <div class = "container"> 
+                            <div class = "row">
+                                <div class = "col-sm-6" >
+                                    <h1>Cargar archivo</h1> 
+                                </div>
 
-                            <div>
-                                <span>
-                                    {this.state.uploadSuccess
-                                        ? "File Upload Successfully"
-                                        : ""}
-                                </span>
+                                <div class = "col-sm-6">
+                                <form>
+                                     <div className="form-group">
+                                         <input
+                                            type="file"
+                                            className="form-control-file"
+                                            id="fileUpload"
+                                            onChange={e => {
+                                                this.setState({
+                                                    fileToUpload: e.target.files[0]
+                                                });
+                                            }}
+                                         />
+                                    
+                                    {this.state.fileToUpload ? (
+                                        <button 
+                                            type="button"
+                                            className="btn btn-light"
+                                            onClick={e => {
+                                                this.uploadFile();
+                                            }}
+                                        >
+                                            Upload your file
+                                        </button>
+                                    ) : null}
+
+                                    <div>
+                                        <span>
+                                            {this.state.uploadSuccess
+                                                ? "File Upload Successfully"
+                                                : ""}
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                                </div>
+
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-        );
+                    </div>
+           
+        )
+       
     }
 }
 export default Content;
