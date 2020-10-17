@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../css/gifs/gifLuces.gif");
+    background-position-y: 15%;
+    background-position-x: 70%;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.seleccionada{
+    margin-left: 75%;
+    margin-top: 50px;
+    display: inline-block;
+    font-family: BentonSans, 'BentonSans Black';
+    font-size: 14px;
+    color: white;
+}
+
+.seleccionada:hovers{
+    color: white;
+}
+
+.non-selected{
+  margin-bottom: 10%;
+  margin-left: 05%;
+  display: inline-block;
+  font-family: BentonSans, 'BentonSans Regular';
+  font-size: 14px;
+  color: white;
+  }
+.non-selected:hover{
+    color: white;
+}
+
+.pdf{
+    text-align: center; 
+    margin: 0;
+    background-color: white;
+    border-radius: 40px;
+    margin-right: 06%;
+    padding: 03%;
+  }
+
+.descargar {
+    background-color:#00d1cb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 50px 40px 0px 0px;
+    margin:0; 
+    margin-left: 85%;  
+    margin-bottom: 02%;
+  }
+
+  .table {
+    padding: 100px 5px;
+    margin: 40px 70px 40px 40px;
+  }
+
+  table th {
+    text-decoration: none;
+    margin: 10px 20px;
+    color: white;
+    font-size: 12px;
+    font-family: BentonSans, 'BentonSans Regular';
+    background-color: #006ec1;
+  }
+  
+  .fila {
+    padding: 02%;
+    color: black;
+    font-size: 12px;
+  }
+  
+  .fila1 {
+    color: black;
+    font-size: 12px;
+    background-color: #f2f2f2;
+  }
