@@ -43,6 +43,9 @@ class Content extends Component {
         });
     }
 
+    onNavegateTablas(){
+        
+    }
     render() {
        
         return(
@@ -105,7 +108,7 @@ class Content extends Component {
                                                    
                             </div>
                         </div>
-                        <button className = "procesar-info"> 
+                        <button onClick = {this.onNavegateTablas}className = "procesar-info"> 
                                         Procesar Información{e => {
                                                 this.uploadFile();
                                             }}
