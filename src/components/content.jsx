@@ -45,9 +45,21 @@ class Content extends Component {
     render() {
        
         return(
+                
                     <div className={styles.fileUploadCont}>
                         <div class = "container"> 
                             <div class = "row">
+                                <div class = "col-sm-12">
+                                    <nav class="navbar navbar-default">
+                                        <div class="container-fluid">
+                                           
+                                            <a class="navbar-brand" href="#">LOGO</a>
+                                         
+                                            <a class="active" href="#">INICIO</a>
+                                            <a href="#">VAR PROYECT</a>
+                                        </div>
+                                     </nav>
+                                </div>
                                 <div class = "col-sm-6" >
                                     <h1>Cargar archivo</h1> 
                                 </div>
@@ -88,11 +100,11 @@ class Content extends Component {
                                 </div>
                             </form>
                                 </div>
-
+                                                   
                             </div>
                         </div>
                     </div>
-           
+
         )
        
     }
