@@ -51,15 +51,14 @@ class Content extends Component {
                         <div className = "container"> 
                             <div className = "row">
                                 <div className = "col-sm-1">
-                                    <img className="logo" src={Logo} alt="" width="120%"/>
-                                    <a className="navbar-brand" href="#"></a>
+                                    <img className = "logo" src={Logo} alt="" width="120%"/>
                                 </div>
                                
                                 <div className = "col-sm-11">
                                     <nav className="navbar navbar-default">
                                         <div className="container-fluid">
                                             <a className="active" href="#">INICIO</a>
-                                            <a href="#">VAR PROYECT</a>
+                                            <a className = "menu dos" href="#">VAR PROYECT</a>
                                         </div>
                                      </nav>
                                 </div>
