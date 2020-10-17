@@ -8,7 +8,6 @@ body {
   
   div > nav 
   {
-    font-family: BentonSans, "BentonSans Regular";
     font-size: 12px;
     margin-left: 70%;
     margin-top: 03%;
@@ -41,4 +40,27 @@ body {
       margin-top: 50px;
   }
 
-  
+  .seleccionada{
+      display: inline-block;
+      font-family: BentonSans, 'BentonSans Black';
+      color: white;
+  }
+
+  .non-selected{
+    display: inline-block;
+    font-family: BentonSans, 'BentonSans Regular';
+    color: white;
+    }
+
+   .procesar-info{
+       background-image: linear-gradient(#006ec1, #094fa4);
+       border: none;
+       border-radius: 5px;
+       color: white;
+       padding: 6px 26px;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 60px 50px;
+       cursor: pointer;
+   }

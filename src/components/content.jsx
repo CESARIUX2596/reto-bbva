@@ -56,9 +56,9 @@ class Content extends Component {
                                
                                 <div className = "col-sm-11">
                                     <nav className="navbar navbar-default">
-                                        <div className="container-fluid">
-                                            <a className="active" href="#">INICIO</a>
-                                            <a className = "menu dos" href="#">VAR PROYECT</a>
+                                        <div className="container-fluid menu-principal">
+                                            <a className="active seleccionada" href="#">INICIO</a>
+                                            <a className="non-selected" href="#">VAR PROYECT</a>
                                         </div>
                                      </nav>
                                 </div>
@@ -105,6 +105,11 @@ class Content extends Component {
                                                    
                             </div>
                         </div>
+                        <button className = "procesar-info"> 
+                                        Procesar Información{e => {
+                                                this.uploadFile();
+                                            }}
+                        </button>
                     </div>
 
         )
