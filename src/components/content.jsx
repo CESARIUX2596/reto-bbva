@@ -49,12 +49,13 @@ class Content extends Component {
                     <div className={styles.fileUploadCont}>
                         <div class = "container"> 
                             <div class = "row">
-                                <div class = "col-sm-12">
+                                <div class = "col-sm-1">
+                                    <a class="navbar-brand" href="#">LOGO</a>
+                                </div>
+                               
+                                <div class = "col-sm-11">
                                     <nav class="navbar navbar-default">
                                         <div class="container-fluid">
-                                           
-                                            <a class="navbar-brand" href="#">LOGO</a>
-                                         
                                             <a class="active" href="#">INICIO</a>
                                             <a href="#">VAR PROYECT</a>
                                         </div>
