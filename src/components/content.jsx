@@ -3,6 +3,7 @@ import axios from "axios";
 import "./css/content.css";
 import * as styles from "./css/FileUpload.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Logo from "./css/Imagenes/blanco.png";
 
 class Content extends Component {
     state = {
@@ -47,25 +48,26 @@ class Content extends Component {
         return(
                 
                     <div className={styles.fileUploadCont}>
-                        <div class = "container"> 
-                            <div class = "row">
-                                <div class = "col-sm-1">
-                                    <a class="navbar-brand" href="#">LOGO</a>
+                        <div className = "container"> 
+                            <div className = "row">
+                                <div className = "col-sm-1">
+                                    <img src={Logo} alt=""/>
+                                    <a className="navbar-brand" href="#">LOGO</a>
                                 </div>
                                
-                                <div class = "col-sm-11">
-                                    <nav class="navbar navbar-default">
-                                        <div class="container-fluid">
-                                            <a class="active" href="#">INICIO</a>
+                                <div className = "col-sm-11">
+                                    <nav className="navbar navbar-default">
+                                        <div className="container-fluid">
+                                            <a className="active" href="#">INICIO</a>
                                             <a href="#">VAR PROYECT</a>
                                         </div>
                                      </nav>
                                 </div>
-                                <div class = "col-sm-6" >
+                                <div className = "col-sm-6" >
                                     <h1>Cargar archivo</h1> 
                                 </div>
 
-                                <div class = "col-sm-6">
+                                <div className = "col-sm-6">
                                 <form>
                                      <div className="form-group">
                                          <input
