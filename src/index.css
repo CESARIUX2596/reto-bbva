@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'BentonSans';
+  src: local('BentonSans Black'), url(../src/components/css/fonts/BentonSans\ Black.otf) format('truetype');
+  src: local('BentonSans Bold'), url(../src/components/css/fonts/BentonSans\ Bold.otf) format('truetype');
+  src: local('BentonSans Medium'), url(../src/components/css/fonts/BentonSans\ Medium.otf) format('truetype');
+  src: local('BentonSans Regular'), url(../src/components/css/fonts/BentonSans\ Regular.otf) format('truetype');
+}

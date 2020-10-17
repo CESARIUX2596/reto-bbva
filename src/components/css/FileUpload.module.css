@@ -1,25 +1,28 @@
-.fileUploadCont {
-    background-color: #fff;
-    border-radius: 4px;
-    border: solid #ccc;
-    margin: 40px auto;
-    padding: 30px;
-    width: 550px;
+*
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("../css/gifs/gifLuces.gif");
+    background-position-y: 15%;
+    background-position-x: 25%;
 }
 
-.header {
-    color: #3f4c6b;
-    font-size: 18px;
-    font-weight: 450;
+h1
+{
+    text-align: left;
+    margin-left: 50%;
+    margin-top: 20%;
+    font-family: BentonSans, 'BentonSans Bold';
+    color: white;
+    font-size: 100%;
+    
 }
 
 form {
-    background-color: #c3d9ff8f;
-    border-radius: 4px;
+    border-radius: 50%;
     display: block;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: left;
+    margin-right: 35%;
+    text-align: right;
 }
 
 form button {

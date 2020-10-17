@@ -44,10 +44,9 @@ class Content extends Component {
         
         return (
             <div className={styles.fileUploadCont}>
-                <div className={styles.header}>
-                    File Upload to S3 with Lambda, And React axios Application
-                </div>
+              
                 <div>
+                    <h1>Cargar archivo</h1>
                     <form>
                         <div className="form-group">
                             <input
