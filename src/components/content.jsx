@@ -83,7 +83,7 @@ class Content extends Component {
                                     {this.state.fileToUpload ? (
                                         <button 
                                             type="button"
-                                            className="btn btn-light"
+                                            className="btn btn-light upload-info"
                                             onClick={e => {
                                                 this.uploadFile();
                                             }}
