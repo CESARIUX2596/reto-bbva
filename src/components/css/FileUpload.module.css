@@ -1,43 +1,39 @@
-
-body
-{
-    margin: 0;
-    padding: 0;
-    background-image: url("../css/gifs/gifLuces.gif");
-    background-position-y: 15%;
-    background-position-x: 70%;
-
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../css/gifs/gifLuces.gif");
+  background-position-y: 15%;
+  background-position-x: 70%;
 }
 
-div > nav
-{
-    font-family: BentonSans, 'BentonSans Regular';
-    font-size: 12px;
-    margin-left: 70%;
-    margin-top: 03%;
-    color: white;
-}   
-
-div > h1
-{
-    font-family: BentonSans, 'BentonSans Black';
-    text-align: left;
-    margin-left: 69%;
-    margin-top: 45%;
-    color: white;
-    font-size: 24px;
+div > nav {
+  font-family: BentonSans, "BentonSans Regular";
+  font-size: 12px;
+  margin-left: 70%;
+  color: white;
 }
 
-div > form 
-{
-    font-family:BentonSans, 'BentonSans Regular'; 
-    font-size: 12px;
-    margin-top: 45%;
-    border-radius: 5px;
-    display: block;
-    margin-right: 80%;
-    text-align: right;
-    color:#b5e5f9;
-    border: none;
+div > h1 {
+  font-family: BentonSans, "BentonSans Black";
+  text-align: left;
+  margin-left: 69%;
+  margin-top: 50%;
+  color: white;
+  font-size: 24px;
 }
 
+div > form {
+  font-family: BentonSans, "BentonSans Regular";
+  font-size: 12px;
+  margin-top: 50%;
+  border-radius: 5px;
+  display: block;
+  margin-right: 80%;
+  text-align: right;
+  color: #b5e5f9;
+  border: none;
+}
+
+.logo {
+  margin-top: 0.03%;
+}

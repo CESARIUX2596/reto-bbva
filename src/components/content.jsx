@@ -51,7 +51,7 @@ class Content extends Component {
                         <div className = "container"> 
                             <div className = "row">
                                 <div className = "col-sm-1">
-                                    <img src={Logo} alt="" width="120%"/>
+                                    <img className="logo" src={Logo} alt="" width="120%"/>
                                     <a className="navbar-brand" href="#"></a>
                                 </div>
                                
