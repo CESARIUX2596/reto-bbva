@@ -17,8 +17,8 @@ class Content extends Component {
     uploadFile() {
         // Getting the signed url
         axios(
-            "https://qn32xzygmj.execute-api.us-west-2.amazonaws.com/develp?fileName=" +
-                this.state.fileToUpload.name
+            "https://qn32xzygmj.execute-api.us-west-2.amazonaws.com/develp?fileName="+ Date.now() +
+                this.state.fileToUpload.name 
         ).then(response => {
             // Getting the url from response
             const url = response.data.fileUploadURL;

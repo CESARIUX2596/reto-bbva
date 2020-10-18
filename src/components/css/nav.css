@@ -3,15 +3,19 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 10vh;
-	background: rgb(17, 36, 122);
+	background: transparent;
+	/* background: blue; */
 	color: white;
 	margin-bottom: 05%;
 }
 
 .nav-links {
-	width: 40%;
+	font-family: BentonSans, "BentonSans Regular";
+	font-size: 14px;
+	margin-top: 10%;
+	width: 50%;
+	margin-left: 70%;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
 	list-style: none;
 }

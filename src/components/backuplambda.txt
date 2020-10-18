@@ -1,0 +1,53 @@
+import json
+import logging
+import os
+import sys
+import boto3
+from botocore.exceptions import ClientError
+import uuid
+
+S3bucket = os.environ['bucketName']
+expirationInSeconds = 120
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+def lambda_handler(event, context):
+    key = ''
+    if('queryStringParameters' not in event):
+        logger.info("ERROR: Expected query in event")
+        sys.exit()
+    elif ('fileName' not in event['queryStringParameters']):
+        logger.info("ERROR: Expected file name in event")
+        sys.exit()
+    else:
+        key = event['queryStringParameters']['fileName']
+        logger.info("Got parameter file name: {}".format(key))
+        
+    if ('uploadID' in event['queryStringParameters']):
+        uploadId = event['queryStringParameters']['uploadID']
+    else:
+        uploadId = uuid.uuid1()
+        
+    params = {'Bucket': S3bucket,
+        'Key': uploadId+'/'+ key,
+        'ContentType': "multipart/form-data"}    
+    
+    s3_client = boto3.client('s3')
+    
+    try:
+        preSignedURL = s3_client.generate_presigned_url('put_object',params,ExpiresIn=expirationInSeconds)
+        
+        return {
+            'statusCode': 200,
+            'headers': {
+                "access-control-allow-origin": "*"
+            },
+            'body': json.dumps({'fileUploadURL':  str(preSignedURL), 'uploadID': str(uploadId)}),
+            "isBase64Encoded": False
+        }
+    
+    except ClientError as ce:
+        return {
+            'Error' : json.dumps(str(ce))
+        }

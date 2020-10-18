@@ -8,19 +8,22 @@ function Nav() {
         color: 'white'
     };
     return (
-                    <nav>
-                        
-                        <img className = "logo" src={Logo} alt="" width="20%"/>
-                        <ul className="nav-links">
-                            <Link></Link>
-                            <Link style = {navStyle} to="/">
-                                <li>Inicio</li>
-                            </Link>
-                            <Link style = {navStyle} to="/varProject">
-                                <li>Proyecto</li>
-                            </Link>
-                        </ul>
-                    </nav>
+        <div className = "container">
+        <div className = "row">
+            <div className = "col-sm-11">
+                <nav>
+                    <ul className="nav-links">
+                        <Link style = {navStyle} to="/tablas">
+                            <li>Tablas</li>
+                        </Link>
+                        <Link style = {navStyle} to="/proyecto">
+                            <li>Proyecto</li>
+                        </Link>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
         
     );
 }
