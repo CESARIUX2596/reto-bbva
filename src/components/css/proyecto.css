@@ -17,7 +17,7 @@
 }
 
 .non-selected{
-  margin-bottom: 05%;
+  margin-bottom: 10%;
   margin-left: 05%;
   display: inline-block;
   font-family: BentonSans, 'BentonSans Regular';
@@ -30,6 +30,9 @@
     color:#001c3d;
 }
 
+.varN{
+    margin-bottom: 05%;
+}
 .titulo-a{
     text-align: center;
     margin-bottom: 02%;
