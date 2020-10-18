@@ -9,12 +9,14 @@ function Nav() {
     };
     return (
                     <nav>
+                        
                         <img className = "logo" src={Logo} alt="" width="20%"/>
                         <ul className="nav-links">
-                            <Link style = {navStyle} to="/tablas">
-                                <li>Tablas</li>
+                            <Link></Link>
+                            <Link style = {navStyle} to="/">
+                                <li>Inicio</li>
                             </Link>
-                            <Link style = {navStyle} to="/proyecto">
+                            <Link style = {navStyle} to="/varProject">
                                 <li>Proyecto</li>
                             </Link>
                         </ul>

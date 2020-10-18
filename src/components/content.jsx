@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./css/content.css";
 import * as styles from "./css/FileUpload.module.css";
+import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Logo from "./css/Imagenes/blanco.png";
 
 class Content extends Component {
@@ -11,7 +13,6 @@ class Content extends Component {
         uploadSuccess: undefined,
         error: undefined
     };
-    
     
     uploadFile() {
         // Getting the signed url
@@ -42,26 +43,13 @@ class Content extends Component {
                 });
         });
     }
-
+z
     render() {
-       
         return(
                 
                     <div className={styles.fileUploadCont}>
                         <div className = "container"> 
                             <div className = "row">
-                                <div className = "col-sm-1">
-                                    <img className = "logo" src={Logo} alt="" width="120%"/>
-                                </div>
-                               
-                                <div className = "col-sm-11">
-                                    <nav className="navbar navbar-default">
-                                        <div className="container-fluid menu-principal">
-                                            <a className="active seleccionada" href="#">INICIO</a>
-                                            <a className="non-selected" href="#">VAR PROYECT</a>
-                                        </div>
-                                     </nav>
-                                </div>
                                 <div className = "col-sm-6" >
                                     <h1>Cargar archivo</h1> 
                                 </div>
@@ -81,15 +69,17 @@ class Content extends Component {
                                          />
                                     
                                     {this.state.fileToUpload ? (
+                                        <Link to="/tablas">
                                         <button 
                                             type="button"
-                                            className="btn btn-light upload-info"
+                                            className="procesar-info"
                                             onClick={e => {
                                                 this.uploadFile();
                                             }}
                                         >
-                                            Upload your file
+                                            Procesar Información
                                         </button>
+                                        </Link>
                                     ) : null}
 
                                     <div>
@@ -101,17 +91,10 @@ class Content extends Component {
                                     </div>
                                 </div>
                             </form>
-                                </div>
-                                                   
+                                </div>                        
                             </div>
                         </div>
-                        <button className = "procesar-info"> 
-                                
-                                            Procesar Información{e => {
-                                                this.uploadFile();
-                                            }}
-                                     
-                        </button>
+                        
                     </div>
 
         )
