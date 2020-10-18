@@ -1,12 +1,12 @@
-body {
+body{
     margin: 0;
     padding: 0;
     background-image: url("../css/gifs/gifLuces.gif");
     background-position-y: 15%;
     background-position-x: 70%;
-  }
+}
 
-  .logo {
+.logo {
     display: inline-block;
     margin-top: 50px;
 }
@@ -20,7 +20,7 @@ body {
     color: white;
 }
 
-.seleccionada:hovers{
+.seleccionada:hover{
     color: white;
 }
 
