@@ -88,9 +88,8 @@
 
 .azul{
     background-image: linear-gradient(to bottom right, #001c3d, #04a5b1, #001c3d);
-    padding: 08%;
-    background-position-y: 70%;
-    text-align: center;
+    padding: 07%;
+    height: 607px;
 }
 
 .equipo{
@@ -110,7 +109,10 @@
 }
 
 .oficinista{
+   margin: 0;
+   padding: 0;
    position: absolute;
+   margin-left: 70%;
 }
 
 .text-a{

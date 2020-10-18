@@ -71,7 +71,11 @@ class Proyecto extends React.Component {
                             <p className = "carrera-d">Ing. Diseño Gráfico Digital</p>
                      </div>
                  </div>
+                 <div className = "col-sm-8">
+                            <img className = "oficinista" src={Ofinista}  alt="" width="90%" />
+                        </div>
              </div>
+    
              <div className = "azul">
                 <div className = "container">
                     <div className = "row">
@@ -87,10 +91,10 @@ class Proyecto extends React.Component {
                              El objetivo que proponemos para dicho proyecto consiste en una solución digital para  procesar, almacenar y categorizar la información de documentos con la finalidad de optimizar los procesos basados en la identificación, extracción y compilación de la información.
                              </p>
                         </div>
-                        <div className = "col-sm-6">
-                            <img className = "oficinista" src={Ofinista}  alt="" width="100%"/>
-                        </div>
                     </div>
+                </div>
+                <div className="container">  
+                   
                 </div>
             </div>  
             </div>
