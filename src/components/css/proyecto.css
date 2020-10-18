@@ -1,0 +1,104 @@
+.logo {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.seleccionada{
+    margin-left: 75%;
+    margin-top: 50px;
+    display: inline-block;
+    font-family: BentonSans, 'BentonSans Black';
+    font-size: 14px;
+    color:#001c3d;
+}
+
+.seleccionada:hover{
+    color: #001c3d;
+}
+
+.non-selected{
+  margin-bottom: 05%;
+  margin-left: 05%;
+  display: inline-block;
+  font-family: BentonSans, 'BentonSans Regular';
+  font-size: 14px;
+  color:#001c3d;
+  }
+
+.non-selected:hover{
+    color:#001c3d;
+}
+
+.titulo-a{
+    text-align: center;
+    margin-bottom: 02%;
+}
+
+.h1{
+    font-family: BentonSans, 'BentonSans Bold';
+    font-size: 14px;
+    padding-right: 50%;
+}
+
+.laptop{
+    margin: 0;
+}
+
+.rafa{
+    margin-top: 10%;
+    border-radius: 50%; 
+}
+
+.nombre-r{
+    font-family: BentonSans, 'BentonSans Regular';
+    font-size: 16px;
+    margin-left: 17%;
+    margin-top: 05%;
+    margin-bottom: 0;
+}
+
+.carrera-r{
+    font-family: BentonSans, 'BentonSans Black';
+    margin-left: 03%;
+    margin-top: 0%;
+}
+
+.nombre-c{
+    font-family: BentonSans, 'BentonSans Regular';
+    margin-left: 19%;
+    margin-top: 05%;
+    margin-bottom: 0;
+}
+
+.nombre-d{
+    font-family: BentonSans, 'BentonSans Regular';
+    margin-left: 17%;
+    margin-top: 05%;
+    margin-bottom: 0;
+}
+
+.nombre-i{
+    font-family: BentonSans, 'BentonSans Regular';
+    margin-left: 13%;
+    margin-top: 05%;
+    margin-bottom: 0;
+}
+
+.nombre-s{
+    font-family: BentonSans, 'BentonSans Regular';
+    margin-left: 14%;
+    margin-top: 05%;
+    margin-bottom: 0;
+}
+
+.carrera-d{
+    font-family: BentonSans, 'BentonSans Black';
+    margin-left: 03%;
+    margin-top: 0%;
+}
+
+.azul{
+    background-image: linear-gradient(to bottom right, #001c3d, #094fa4, #00d1cb, #094fa4, #001c3d);
+    padding: 08%;
+    text-align: center;
+}
