@@ -90,11 +90,14 @@ class Proyecto extends React.Component {
                              <p className = "text-a">
                              El objetivo que proponemos para dicho proyecto consiste en una solución digital para  procesar, almacenar y categorizar la información de documentos con la finalidad de optimizar los procesos basados en la identificación, extracción y compilación de la información.
                              </p>
+                             <button className = "ver-video"> 
+                                            Ver proyecto {e => {
+                                                this.uploadFile();
+                                            }}
+                                     
+                        </button>
                         </div>
                     </div>
-                </div>
-                <div className="container">  
-                   
                 </div>
             </div>  
             </div>

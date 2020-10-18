@@ -122,5 +122,20 @@
     color: honeydew;
     text-align: justify;
     margin-left: 05%;
+    margin-top: 03%;
+}
+
+.ver-video{
+    background-color: #00d1cb;
+	border: none;
+	border-radius: 5px;
+	color:  #fcf9f9;
+	padding: 7px 27px;
+	text-decoration: none;
+    font-size: 16px;
+    font-family: BentonSans, 'BentonSans Regular';
+	margin: 50px 40px 0px 0px;
+	margin: 0;
+    margin-left: 05%;
     margin-top: 05%;
 }
