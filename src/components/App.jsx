@@ -9,9 +9,11 @@ function App(){
         <Router>
             <div className="App">
                 <Nav />
-                <Route path="/content" component={Content}/>
-                <Route path="/tablas" component={Tablas}/>
-                <Route path="/proyecto" component={Proyecto}/>
+                <Switch>
+                    <Route path="/" exact component={Content}/>
+                    <Route path="/tablas" component={Tablas}/>
+                    <Route path="/proyecto" component={Proyecto}/>
+                </Switch>
             </div>
         </Router>
     );
