@@ -2,15 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-// import Content from "./components/content";
-// import Tablas from "./components/tablas";
-import Proyecto from "./components/proyecto";
+import App from "./components/App";
 
 ReactDOM.render(
 	<div>
-		{/* <Content/> */}
-		{/* <Tablas/> */}
-		<Proyecto/>
+		<App/>
 	</div>,
 	document.getElementById("root")
 );

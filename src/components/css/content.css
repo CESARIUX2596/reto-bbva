@@ -1,79 +1,78 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("../css/gifs/gifLuces.gif");
-    background-position-y: 15%;
-    background-position-x: 70%;
-  }
-  
-  div > nav 
-  {
-    font-size: 12px;
-    margin-left: 70%;
-    margin-top: 03%;
-    color: white;
-  }
-  
-  div > h1 {
-    font-family: BentonSans, "BentonSans Black";
-    text-align: left;
-    margin-left: 69%;
-    margin-top: 45%;
-    color: white;
-    font-size: 24px;
-  }
-  
-  div > form {
-    font-family: BentonSans, "BentonSans Regular";
-    font-size: 12px;
-    margin-top: 45%;
-    border-radius: 5px;
-    display: block;
-    margin-right: 80%;
-    text-align: right;
-    color: #b5e5f9;
-    border: none;
-  }
-  
-  .logo {
-      display: inline-block;
-      margin-top: 50px;
-  }
+	margin: 0;
+	padding: 0;
+	background-image: url("../css/gifs/gifLuces.gif");
+	background-position-y: 15%;
+	background-position-x: 70%;
+}
 
-  .seleccionada{
-      display: inline-block;
-      font-family: BentonSans, 'BentonSans Black';
-      color: white;
-  }
+div > nav {
+	font-size: 12px;
+	margin-left: 70%;
+	margin-top: 03%;
+	color: white;
+}
 
-  .non-selected{
-    display: inline-block;
-    font-family: BentonSans, 'BentonSans Regular';
-    color: white;
-    }
+div > h1 {
+	font-family: BentonSans, "BentonSans Black";
+	text-align: left;
+	margin-left: 69%;
+	margin-top: 45%;
+	color: white;
+	font-size: 24px;
+}
 
-   .procesar-info{
-       background-image: linear-gradient(#006ec1, #094fa4);
-       border: none;
-       border-radius: 5px;
-       color: white;
-       padding: 6px 26px;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 14px;
-       margin: 45px 50px;
-       margin-left: 45%;
-       cursor: pointer;
-   }
+div > form {
+	font-family: BentonSans, "BentonSans Regular";
+	font-size: 12px;
+	margin-top: 45%;
+	border-radius: 5px;
+	display: block;
+	margin-right: 80%;
+	text-align: right;
+	color: #b5e5f9;
+	border: none;
+}
 
-   .upload-info{
-       background-color: white;
-       border: none;
-       border-radius: 5px;
-       color: black;
-       padding: 6px 40px;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 14px;
-       cursor: pointer;
-   }
+.logo {
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.seleccionada {
+	display: inline-block;
+	font-family: BentonSans, "BentonSans Black";
+	color: white;
+}
+
+.non-selected {
+	display: inline-block;
+	font-family: BentonSans, "BentonSans Regular";
+	color: white;
+}
+
+.procesar-info {
+	background-image: linear-gradient(#006ec1, #094fa4);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 6px 26px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 45px 50px;
+	margin-left: 45%;
+	cursor: pointer;
+}
+
+.upload-info {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	color: black;
+	padding: 6px 40px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+}
