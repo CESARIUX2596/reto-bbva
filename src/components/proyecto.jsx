@@ -7,7 +7,10 @@ import Shamira from "./css/Imagenes/shamira.png";
 import Ivannia from "./css/Imagenes/ivannia.png";
 import RafaV from "./css/Imagenes/RafaV.png";
 import Dulce from "./css/Imagenes/dulce.png";
-import Laptop from "./css/Imagenes/laptop.png";
+import Cesar from "./css/Imagenes/Cesar.png";
+import Ofinista from "./css/Imagenes/oficinista.png";
+import LogoA from "./css/Imagenes/logoAzul.svg";
+import VarN from "./css/Imagenes/varteamName.svg";
 
 class Proyecto extends React.Component {
 
@@ -18,7 +21,7 @@ class Proyecto extends React.Component {
               <div  className = "container">
                 <div className = "row">
                     <div className = "col-sm-1">
-                        <img className = "logo" src={Logo} alt="" width="120%"/>
+                        <img className = "logo" src={Logo} alt="" width="200%"/>
                     </div>
                     <div className = "col-sm-11">
                         <div className="container-fluid menu-principal">
@@ -29,12 +32,12 @@ class Proyecto extends React.Component {
                 </div>
                 <div className ="row">
                     <div className = "col-sm-12 titulo-a">
-                         <h1>Nuestro equipo</h1>
+                        <img className = "varN" src={VarN}  alt="" width="20%"/>
                     </div>
                 </div>
              </div>
-             <div className = "container">
-                 <div className = "row">
+             <div className = "container equipo">
+                 <div className = "row fotos-a">
                      <div className = "col-sm-4">
                         <img className = "rafa" src={Rafa}  alt="" width="60%"/>
                             <p className = "nombre-r"> Rafael Reyes</p>
@@ -46,12 +49,12 @@ class Proyecto extends React.Component {
                             <p className = "carrera-d">Ing. Diseño Gráfico Digital</p>
                      </div>
                      <div className = "col-sm-4">
-                        <img className = "rafa" src={Rafa}  alt="" width="60%"/>
-                            <p className = "nombre-c"> César Torres</p>
+                        <img className = "rafa" src={Cesar}  alt="" width="60%"/>
+                            <p className = "nombre-c"> Cesar Torres</p>
                             <p className = "carrera-r">Ing. Ciencias Computacionales</p>
                      </div>
                  </div>
-                 <div className = "row">
+                 <div className = "row fotos-b">
                      <div className = "col-sm-4">
                         <img className = "rafa" src={Ivannia}  alt="" width="60%"/>
                             <p className = "nombre-i"> Ivannia Arellano</p>
@@ -73,10 +76,19 @@ class Proyecto extends React.Component {
                 <div className = "container">
                     <div className = "row">
                         <div className = "col-sm-6">
-                            
+                             <img className = "logo-a" src={LogoA}  alt="" width="40%"/>
+                             <p className = "text-a">
+                             Un mundo digital de procesos manuales…
+                             </p>
+                             <p className = "text-a">
+                             El reto que hemos seleccionado para el Hackaton BBVA 2020 fue el Interpretador Inteligente en donde se ha definido que el problema consiste en las dificultades del proceso actual el cual radica en los riesgos de la manipulación manual de datos e información ya que con base en estos se dictamina la posibilidad o negación de crédito. 
+                             </p>
+                             <p className = "text-a">
+                             El objetivo que proponemos para dicho proyecto consiste en una solución digital para  procesar, almacenar y categorizar la información de documentos con la finalidad de optimizar los procesos basados en la identificación, extracción y compilación de la información.
+                             </p>
                         </div>
                         <div className = "col-sm-6">
-                            <img className = "laptop" src={Laptop}  alt="" width="120%"/>
+                            <img className = "oficinista" src={Ofinista}  alt="" width="100%"/>
                         </div>
                     </div>
                 </div>
