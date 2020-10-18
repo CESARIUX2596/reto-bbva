@@ -1,27 +1,17 @@
 import React, { Component } from "react";
 import "./css/tablas.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from "./css/Imagenes/blanco.png";
+// import Logo from "./css/Imagenes/blanco.png";
 
-class Tablas extends React.Component {
-
+class Tablas extends Component {
+    state = {
+        timeStamp:  undefined,
+        fileToUpload: undefined,
+    };
   render() {
 
     return (
         <div>
-             {/* <div  className = "container">
-                <div className = "row">
-                    <div className = "col-sm-1">
-                        <img className = "logo" src={Logo} alt="" width="120%"/>
-                    </div>
-                    <div className = "col-sm-11">
-                        <div className="container-fluid menu-principal">
-                            <a className="active seleccionada" href="#">INICIO</a>
-                            <a className="non-selected" href="#">VAR PROYECT</a>
-                        </div>
-                    </div>
-                </div>
-             </div> */}
              <div className ="container">
                  <div className = "pdf">
                     <button className = "descargar"> 

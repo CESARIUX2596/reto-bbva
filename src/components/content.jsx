@@ -5,19 +5,23 @@ import * as styles from "./css/FileUpload.module.css";
 import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Logo from "./css/Imagenes/blanco.png";
+// import Logo from "./css/Imagenes/blanco.png";
 
 class Content extends Component {
     state = {
         fileToUpload: undefined,
         uploadSuccess: undefined,
-        error: undefined
+        error: undefined,
+        timeStamp: undefined
     };
     
     uploadFile() {
+        
+        this.setState({timeStamp: Date.now()});
+
         // Getting the signed url
         axios(
-            "https://qn32xzygmj.execute-api.us-west-2.amazonaws.com/develp?fileName="+ Date.now() +
+            "https://qn32xzygmj.execute-api.us-west-2.amazonaws.com/develp?fileName="+ this.state.timeStamp +
                 this.state.fileToUpload.name 
         ).then(response => {
             // Getting the url from response

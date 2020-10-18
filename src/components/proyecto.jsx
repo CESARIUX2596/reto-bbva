@@ -12,10 +12,9 @@ import Ofinista from "./css/Imagenes/oficinista.png";
 import LogoA from "./css/Imagenes/logoAzul.svg";
 import VarN from "./css/Imagenes/varteamName.svg";
 
-class Proyecto extends React.Component {
+class Proyecto extends Component {
 
   render() {
-
     return (
         <div>
               <div  className = "container">
@@ -25,8 +24,8 @@ class Proyecto extends React.Component {
                     </div>
                     <div className = "col-sm-11">
                         <div className="container-fluid menu-principal">
-                            <a className="active seleccionada" href="#">INICIO</a>
-                            <a className="non-selected" href="#">VAR PROYECT</a>
+                            <a className="active seleccionada" href="/#">INICIO</a>
+                            <a className="non-selected" href="/#">VAR PROYECT</a>
                         </div>
                     </div>
                 </div>
