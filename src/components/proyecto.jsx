@@ -72,7 +72,7 @@ class Proyecto extends React.Component {
                      </div>
                  </div>
                  <div className = "col-sm-8">
-                            <img className = "oficinista" src={Ofinista}  alt="" width="90%" />
+                            <img className = "oficinista" src={Ofinista}  alt="" width="75%" />
                         </div>
              </div>
     
