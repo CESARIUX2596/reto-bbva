@@ -9,7 +9,7 @@ class Tablas extends React.Component {
 
     return (
         <div>
-             <div  className = "container">
+             {/* <div  className = "container">
                 <div className = "row">
                     <div className = "col-sm-1">
                         <img className = "logo" src={Logo} alt="" width="120%"/>
@@ -21,7 +21,7 @@ class Tablas extends React.Component {
                         </div>
                     </div>
                 </div>
-             </div>
+             </div> */}
              <div className ="container">
                  <div className = "pdf">
                     <button className = "descargar"> 
